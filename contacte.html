@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Novoxmed - Contacte</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <h1>Novoxmed</h1>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="qui-som.html">Qui som</a></li>
+            <li><a href="contacte.html">Contacte</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="contact-form">
+    <h2>Contacta amb nosaltres</h2>
+    <form action="contacte.php" method="post">
+        <label for="nom">Nom:</label>
+        <input type="text" id="nom" name="nom" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="missatge">Missatge:</label>
+        <textarea id="missatge" name="missatge" required></textarea>
+        
+        <button type="submit">Enviar</button>
+    </form>
+    <p>Telèfon: 123-456-789 | Correu: info@novoxmed.com</p>
+    <p>Ubicació: Carrer Exemple, 10, Barcelona</p>
+</section>
+
+<footer>
+    <p>&copy; 2025 Novoxmed</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Novoxmed - Home</title>
+<link rel="stylesheet" href="css/style.css">
+
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FNKBN8CW8F"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-FNKBN8CW8F');
+</script>
+</head>
+<body>
+
+<section class="hero">
+    <div class="parallax"></div>
+    <div class="overlay">
+        <h1 class="title">Novoxmed</h1>
+        <p class="subtitle">“The time for medical solutions is now”</p>
+
+        <!-- Barra de navegación hero solo en Home -->
+        <nav class="hero-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="qui-som.html">Qui som</a></li>
+                <li><a href="contacte.html">Contacte</a></li>
+            </ul>
+        </nav>
+
+        <button id="openVideo" class="btn-contact">Ver video</button>
+
+        <!-- Modal video -->
+        <div id="videoModal" class="modal">
+            <span class="close">&times;</span>
+            <video controls class="modal-video">
+                <source src="arxius/video.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <a href="contacte.html" class="btn-contact">Contacta'ns</a>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2025 Novoxmed</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

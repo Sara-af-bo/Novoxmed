@@ -6,10 +6,11 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     $hora = date("Y-m-d H:i:s");
 
     $fila = [$hora, $nom, $email, $missatge];
-    $fitxer = fopen("arxius/missatges.csv", "a");
+    $fitxer = fopen("missatges.csv", "a");
     fputcsv($fitxer, $fila);
     fclose($fitxer);
 
     echo "<script>alert('Missatge enviat correctament!'); window.location.href='contacte.html';</script>";
 }
 ?>
+
